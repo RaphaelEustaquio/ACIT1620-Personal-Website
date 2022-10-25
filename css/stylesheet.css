@@ -1,24 +1,34 @@
 body{
-    background-color: mediumaquamarine;
-    display: flex;
-    flex-direction: column;
+    background-color: #edddd0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-nav{
-
-    background-color: #a6cad4;
+main{
+    grid-column: 1/-1;
 }
-
 .h1headingindex{
     font-family: 'Montserrat', sans-serif;
 }
 
 header{
+    background-color: #a6cad4;
     text-align: center;
-
-
+    grid-column: 1/-1;
 }
 
 .navlist{
+    display: flex;
+    justify-content: center;
     list-style-type: none;
+}
+
+footer{
+    background-color: #a6cad4;
+    text-align: center;
+    grid-column: 1/-1;
+}
+
+li{
+    padding: 0 10px;
 }
