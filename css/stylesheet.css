@@ -1,0 +1,41 @@
+body{
+    background-color: #edddd0;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+aside{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.h1headingindex{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #a6cad4;
+    text-align: center;
+}
+
+.navlist{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer{
+    background-color: #a6cad4;
+    text-align: center;
+
+}
+
+li{
+    padding: 0 10px;
+}
+
+p{
+    margin: 0%;
+}
