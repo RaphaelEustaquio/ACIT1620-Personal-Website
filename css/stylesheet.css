@@ -1,16 +1,24 @@
 body{
     background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
-    color: darkslategray;
-}
+nav{
 
-nav {
-    text-align: center;
-    background-color: lightblue;
+    background-color: #a6cad4;
 }
 
 .h1headingindex{
     font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    text-align: center;
+
+
+}
+
+.navlist{
+    list-style-type: none;
 }
