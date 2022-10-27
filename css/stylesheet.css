@@ -2,19 +2,35 @@ body{
     background-color: #edddd0;
 
 }
+
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 20% 60% 20%;
 }
+
+article{
+    grid-row: 2;
+}
+
 aside{
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .h1headingindex{
     font-family: 'Montserrat', sans-serif;
 }
 
+.h2intro{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+section{
+    grid-row: 3;
+
+}
 header{
     background-color: #a6cad4;
     text-align: center;
