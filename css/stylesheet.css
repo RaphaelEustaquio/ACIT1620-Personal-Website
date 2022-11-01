@@ -2,51 +2,36 @@ body{
     background-color: #edddd0;
 
 }
-@media (max-width: 600px) {
-    .coursesection{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border-bottom: 1px solid black;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-    .coursep{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .coursesection3{
-        padding-bottom: 10px;
-    }
-    .navlist{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style-type: none;
-        gap: 10px;
-    }
-    
-    
-}
-
-.coursesection{
+.coursemain{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.coursesection{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-
-.coursep{
+.coursep1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.coursesection3{
+.coursesection2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 10px;
-}
 
+}
+.navlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+}
 
 .indexmain{
     display: grid;
@@ -81,11 +66,6 @@ header{
     text-align: center;
 }
 
-.navlist{
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
 
 footer{
     background-color: #a6cad4;
@@ -101,22 +81,38 @@ p{
     margin: 0%;
 }
 
-@media (max-width: 600px) {
-    .coursesection{
+@media (min-width: 600px) {
+    .coursemain{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+    }
+    .coursesection{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         border-bottom: 1px solid black;
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
-    .coursep{
-        padding-top: 10px;
-        padding-bottom: 10px;
+    .coursep1{
+        grid-row: 0;
+        grid-column: 0;
     }
-    .coursesection3{
-        padding-bottom: 10px;
+    .coursep2{
+        grid-row: 3;
+        grid-column: 0;
     }
-    
-    
+    .coursep3{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .coursesection2{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .navlist{
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        gap: 10px;
+    }
 }
