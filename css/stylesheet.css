@@ -19,11 +19,6 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-.coursp3{
-    grid-row: 3;
-}
-
 .coursesection2{
     display: grid;
     grid-template-rows: 1fr 1fr 4fr;
