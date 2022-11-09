@@ -18,22 +18,51 @@ let input = "";
 do {
     input = prompt("Enter a 4-digit number")
 }
-while(isNaN(Number(input)) | input.toString().length !== 4)
+while(isNaN(Number(input)) || input.toString().length !== 4)
 
-let sign = false
-for (let course of courseList)
+// let sign = Boolean
+// for (let course of courseList)
+// {
+//     if(course.code.includes(input)){
+
+    
+//     console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
+//     sign = true
+//     }
+// }   
+
+// if(sign == false)
+// {
+//     courseList.push({code:input, name:null})
+//     console.log("Success")
+// }
+
+function conv(input)
 {
-    if(course.code.includes(input)){
-
-    
-    console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
-    sign = true
+    for (let course of courseList)
+    {
+        if(course.code.includes(input)){
+            return true
+        }
     }
-    
+
 }
 
-if(sign == false)
+if(conv(input) == true)
+{
+    for(let course of courseList)
+    { 
+        if(course.code.includes(input))
+        {
+            console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
+    }
+}
+}
+
+if(conv(input) !== true)
 {
     courseList.push({code:input, name:null})
-    console.log("Success")
 }
+
+
+console.log(courseList)
