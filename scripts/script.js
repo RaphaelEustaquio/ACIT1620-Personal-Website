@@ -1,6 +1,6 @@
 let ACIT1620 = {
-        code:"ACIT 1620",
-        name:"Web Fundamental Technologies",
+    code:"ACIT 1620",
+    name:"Web Fundamental Technologies",
 }
 
 let ACIT1515 = {
@@ -9,13 +9,13 @@ let ACIT1515 = {
 }
 
 let ACIT1630 = {
-    code: "ACIT1630",
+    code: "ACIT 1630",
     name: "Database Systems"
 }
 const courseList = [ACIT1620, ACIT1515, ACIT1630]
 
 let input = "";
 do {
-    input = promt("Enter a 4-digit number")
+    input = prompt("Enter a 4-digit number")
 }
-while(!Number.isInteger(input))
+while(isNaN(Number(input)) | input.toString().length !== 4)
