@@ -20,23 +20,6 @@ do {
 }
 while(isNaN(Number(input)) || input.toString().length !== 4)
 
-// let sign = Boolean
-// for (let course of courseList)
-// {
-//     if(course.code.includes(input)){
-
-    
-//     console.log(`Yes I am taking the course: ${course.code} - ${course.name}`)
-//     sign = true
-//     }
-// }   
-
-// if(sign == false)
-// {
-//     courseList.push({code:input, name:null})
-//     console.log("Success")
-// }
-
 function conv(input)
 {
     for (let course of courseList)
@@ -63,6 +46,3 @@ if(conv(input) !== true)
 {
     courseList.push({code:input, name:null})
 }
-
-
-console.log(courseList)
